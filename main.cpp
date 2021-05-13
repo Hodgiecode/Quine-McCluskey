@@ -247,40 +247,6 @@ int main(int argc, char* argv[]){
 	temp.clear();
 	
 
-	
-	for (size_t i=0;i<vect2.size();i++){
-		for (size_t i1=0;i1<vect2[i].id.size();i1++){
-			for (size_t j=0;j<vect2.size();j++){
-				for (size_t i2=0;i2<vect2[j].id.size();i2++){
-					if (i!=j && vect2[i].id[i1]==vect2[j].id[i2]){
-						temp.push_back(vect2[i].id[i1]); 
-						break;
-					}
-				}
-			}
-		}
-		
-		
-		for (size_t t1=0;t1<temp.size();t1++){
-			for (size_t t2=t1+1;t2<temp.size();t2++){
-				if (temp[t1]==temp[t2]){
-					temp.erase(temp.begin()+t2);
-				}
-			}
-		}
-		
-		if (temp.size()==vect2.size()){
-			vect2.erase(vect2.begin()+i);
-		}
-		
-		temp.clear();
-	}
-		
-		
-	printf("After second stage\n");
-	print(vect2);
-	
-
 	for (size_t i=0;i<vect2.size();i++){
 		for (size_t j=i+1;j<vect2.size();j++){
 
