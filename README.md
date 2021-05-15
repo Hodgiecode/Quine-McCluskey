@@ -1,4 +1,3 @@
 # Quine-McCluskey
-Quine–McCluskey
 
-Without Petrick Method
+Алгоритм Квайна-МакКласки. Результат работы может быть улучшен добавлением метода Петрика
